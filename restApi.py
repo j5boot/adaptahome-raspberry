@@ -33,6 +33,7 @@ class SetValue :
 		web.header("Access-Control-Allow-Methods","GET,POST,OPTIONS,PUT,DELETE")
 		jobj = json.loads(web.data())
 		dicc = controladora.setValue(jobj)
+		print dicc
 		return json.dumps(dicc)
 
 class GetValue :
